@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 195 340">
+  <circle class="cls-1" cx="50" cy="50" r="50"/>
+  <circle class="cls-1" cx="50" cy="170" r="50"/>
+  <circle class="cls-1" cx="50" cy="290" r="50"/>
+  <ellipse class="cls-1" cx="135" cy="110" rx="25" ry="50"/>
+  <ellipse class="cls-1" cx="135" cy="230" rx="25" ry="50"/>
+  <ellipse class="cls-1" cx="182.5" cy="170" rx="12.5" ry="50"/>
+</svg>
