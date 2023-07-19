@@ -123,7 +123,8 @@ const Form = () => {
     };      
 
     return (
-        <FormGroup name="coaching" netlify>
+        <FormGroup name="coaching" method="post">
+            <input type="hidden" name="form-name" value="coaching" />
             <FormGroupItem>
                 <Label htmlFor="name">
                     Name
@@ -134,13 +135,13 @@ const Form = () => {
                 <Label htmlFor="email">
                     Email Address
                 </Label>
-                <InputText id="email" type="text" value={emailValue} onChange={handleEmailChange} autoComplete="off" name="email" />
+                <InputText id="email" type="email" value={emailValue} onChange={handleEmailChange} autoComplete="off" name="email" />
             </FormGroupItem>
             <FormGroupItem>
-                <Label htmlFor="textarea">
+                <Label htmlFor="message">
                     Message
                 </Label>
-                <Textarea id="textarea" value={textareaValue} onChange={handleTextareaChange} name="message" />
+                <Textarea id="message" value={textareaValue} onChange={handleTextareaChange} name="message" />
             </FormGroupItem>
             <Button type="submit">Submit</Button>
         </FormGroup>
