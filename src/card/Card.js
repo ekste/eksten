@@ -19,7 +19,7 @@ const CardContainer = styled.div`
 
 const CardTitle = styled.h2`
     color: ${theme.colors.headerText};
-    font-famaily: ${theme.fonts.heading};
+    font-family: ${theme.fonts.heading}; 
     font-size: ${theme.fontSize.small};
     font-weight: ${theme.fontWeight.bold};
     margin: ${(props) => (props.centerAlign ? '0 auto' : '0')};
@@ -32,6 +32,7 @@ const CardTitle = styled.h2`
       font-size: ${theme.fontSize.mid};
     }
 `;
+
 
 const CardContent = styled.p`
     color: ${theme.colors.subHeaderText};
@@ -122,7 +123,7 @@ const DiscsContainer = styled.div`
   svg {
     block-size: 100%;
 
-    @media (max-width: 1300px) {
+    @media (max-width: 1000px) {
       display: none;
     }
   }
@@ -140,7 +141,7 @@ const DiscsContainer2 = styled.div`
   svg {
     block-size: 100%;
 
-    @media (max-width: 1300px) {
+    @media (max-width: 1000px) {
       display: none;
     }
   }
@@ -149,7 +150,7 @@ const DiscsContainer2 = styled.div`
 const Card = ({ title, content, ctaText, ctaLink, centerAlign, flair }) => {
   return (
     <CardContainer centerAlign={centerAlign}>
-      <CardTitle>{title}</CardTitle>
+      <CardTitle centerAlign={centerAlign}>{title}</CardTitle>
       <CardContent centerAlign={centerAlign}>{content}</CardContent>
       {ctaText && ctaLink && (
         <CTAButton href={ctaLink}>{ctaText}</CTAButton>
